@@ -39,14 +39,14 @@ Building off of the last snippet:
 ```markdown
 [TodoList]:: (
     completeKickButt
-        this CheckItem: 'Kick butt'
+        this checkItem: 'Kick butt'
 )
 ```
 
 Once a function has been defined and associated with a tag, that function can now be called from the REPL:
 
 ```smalltalk
-TodoList kickAss
+TodoList completeKickButt
 ```
 
 ## REPL
@@ -56,7 +56,7 @@ markdown files with bubblegum. To get started, clone this repo before installing
 
 ```shell
 $ npm install
-$ npm run start demo.md
+$ npm run start ./examples/helloworld.md
 ```
 
 ## Development
@@ -91,7 +91,7 @@ e.g. `@{ 10 11 12 } at: 2` ==> `12`
 
 To get a range of numbers (not inclusive), use: `Number to: end`,
 
-e.g. `0 to: 10` ==> `@{ 0 1 2 3 4 5 6 7 8 9 }
+e.g. `0 to: 10` ==> `@{ 0 1 2 3 4 5 6 7 8 9 }`
 
 The not operator for boolean values is: `Boolean not`,
 
